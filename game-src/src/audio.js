@@ -25,4 +25,4 @@ export function sfx(k){if(!ctx||muted)return;const t=ctx.currentTime;const lim={
  case 'place':tone(t,523,.1,'square',.15,D);tone(t+.08,784,.15,'square',.15,D);break;case 'merge':tone(t,700,.08,'triangle',.25,D,1100);break;
  case 'move':tone(t,300,.05,'triangle',.15,D,200);break;case 'remove':tone(t,400,.15,'triangle',.2,D,150);break;
  case 'leak':tone(t,220,.3,'sawtooth',.2,D,90);break;case 'wave':[523,659,784,1046].forEach((f,i)=>tone(t+i*.09,f,.15,'square',.12,D));break;
- case 'over':[392,330,262,196].forEach((f,i)=>tone(t+i*.22,f,.3,'triangle',.3,D));break;case 'ui':tone(t,880,.05,'square',.08,D);break;case 'no':tone(t,180,.12,'square',.12,D);break;}}
+ case 'over':[392,330,262,196].forEach((f,i)=>tone(t+i*.22,f,.3,'triangle',.3,D));break;case 'break':noise(t,.3,.5,1500,D);tone(t,300,.3,'square',.15,D,60);break;case 'ui':tone(t,880,.05,'square',.08,D);break;case 'no':tone(t,180,.12,'square',.12,D);break;}}
