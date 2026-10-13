@@ -3,12 +3,15 @@
 <meta name="theme-color" content="#1b2433"><title>2048ディフェンス</title><style>/*CSS*/</style></head><body>
 <div id="top"><canvas id="c"></canvas>
 <div id="hud"><span id="hWave">WAVE 0</span><span id="hHp">❤️ 20</span><span id="hScore">⭐ 0</span></div>
-<div id="hNext"></div><div id="msg"></div></div>
+<div id="hNext"></div><div id="msg"></div>
+<div id="ctrl"><button class="cb on" data-sp="1">1x</button><button class="cb" data-sp="2">2x</button><button class="cb" data-sp="3">3x</button><button class="cb" id="bMute">🔊</button><button class="cb" id="bLegend">？</button></div>
+<div id="umenu" class="hide"><div id="umTitle"></div><div id="umInfo"></div><button id="umDel">撤去</button><button id="umCancel">キャンセル</button></div></div>
 <div id="bottom"><div id="info">スワイプで合体！ タイルをタップ→マップをタップで配置</div><div id="board"></div></div>
 <div id="start" class="ov"><div class="card"><h1>2048<br>ディフェンス</h1>
 <p>下の<b>2048</b>で数字を合体させて<br>強いユニットを作ろう！</p>
-<ol><li>下の盤面を<b>スワイプ</b>で同じ数字を合体</li><li>タイルを<b>タップ</b>して選ぶ</li><li>上のマップの<b>緑のマス</b>をタップで配置<br>（配置したタイルは盤面から消える）</li><li>敵を城まで通すと❤️が減る。0でゲームオーバー</li></ol>
+<ol><li>下の盤面を<b>スワイプ</b>で同じ数字を合体</li><li>タイルを<b>タップ</b>して選ぶ</li><li>上のマップの<b>緑のマス</b>をタップで配置<br>（配置したタイルは盤面から消える）</li><li>敵には弱点あり！「？」で一覧（例：🛡️装甲は💣爆発系だけ）</li><li>置いたユニットをタップで「撤去」できる</li><li>敵を城まで通すと❤️が減る。0でゲームオーバー</li></ol>
 <p class="s">ヒント：じゃまなタイルは出撃させて盤面を空けよう。マスに置いたユニットより大きい数字なら上書きできます。</p>
-<button id="bStart">スタート</button><div class="cr">3D素材: Kenney (CC0) / three.js (MIT)</div></div></div>
+<button id="bStart">スタート</button><div class="cr">3D素材: Kenney (CC0) / three.js (MIT) / 音: WebAudioで自作</div></div></div>
+<div id="legend" class="ov hide"><div class="card"><div id="lgBody"></div><button id="lgClose">とじる</button></div></div>
 <div id="over" class="ov hide"><div class="card"><h1>ゲームオーバー</h1><p id="oTxt"></p><button id="bRe">もう一度あそぶ</button></div></div>
 <script>/*JS*/</script></body></html>

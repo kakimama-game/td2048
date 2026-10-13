@@ -22,3 +22,13 @@ body{display:flex;flex-direction:column;height:100dvh}
 .card ol{text-align:left;font-size:14px;margin:10px 0 8px 22px}.card .s{font-size:12px;color:#bcd}
 button{margin-top:14px;font-size:20px;font-weight:800;padding:12px 38px;border:0;border-radius:30px;background:#ffb52e;color:#3a2200;box-shadow:0 4px 0 #b06d00}
 .cr{font-size:10px;color:#9ab;margin-top:10px}
+#ctrl{position:absolute;left:6px;bottom:6px;display:flex;gap:4px}
+.cb{margin:0;font-size:13px;padding:5px 8px;border-radius:8px;background:rgba(20,30,50,.7);color:#fff;box-shadow:none;font-weight:800;min-width:34px}
+.cb.on{background:#ffb52e;color:#3a2200}
+#msg{bottom:auto;top:44%}
+#umenu{position:absolute;background:rgba(25,35,60,.94);border:2px solid #ffd84a;border-radius:12px;padding:8px 10px;text-align:center;z-index:5;width:180px}
+#umenu.hide{display:none}#umTitle{font-weight:900;font-size:14px}#umInfo{font-size:11px;color:#cde;margin:3px 0 4px}
+#umenu button{margin:4px 3px 0;font-size:15px;padding:7px 14px;box-shadow:none}#umCancel{background:#5b6785!important;color:#fff!important}#umDel{background:#e8574a!important;color:#fff!important}
+.t .h{font-size:min(2.4vw,1.25dvh);line-height:1.1;letter-spacing:-1px}
+#legend .card{max-height:90dvh;overflow:auto}#legend h2{font-size:18px;color:#ffd84a;margin-bottom:6px}#legend table{width:100%;text-align:left;font-size:13px;border-spacing:0 6px}
+#legend .ei{width:40px;height:40px;text-align:center;font-size:22px;border-radius:10px}#legend td small{color:#cde}#legend button{margin-top:8px}

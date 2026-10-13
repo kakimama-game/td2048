@@ -1,3 +1,4 @@
 2048ディフェンス クレジット
-3Dモデル: Kenney Tower Defense Kit / Mini Dungeon (CC0) https://kenney.nl
-ライブラリ: three.js (MIT)
+3Dモデル: Kenney Tower Defense Kit / Mini Dungeon (CC0 1.0) https://kenney.nl
+ライブラリ: three.js (MIT License) https://threejs.org
+BGM・効果音: WebAudio APIでプログラム生成（外部音源なし、著作権フリー）
